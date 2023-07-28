@@ -81,6 +81,7 @@ int _mysetenv(info_t *info)
  * This function searches for the value of the environment variable with the specified 'name'
  * in the 'env' linked list of the 'info' structure. If the variable is found, it returns
  * a pointer to its value; otherwise, it returns NULL.
+ * Return: the value.
  */
 char *_getenv(info_t *info, const char *name)
 {

@@ -30,7 +30,8 @@ void remove_comments(char *buf)
  *
  * This function converts the integer 'num' into a string representation using the specified 'base'.
  * The 'flags' argument can be used to specify whether the number should be treated as unsigned.
- * Returns: the string representation of the number.
+ *
+ * Return: string representation of the number.
  */
 char *convert_number(long int num, int base, int flags)
 {
@@ -67,7 +68,8 @@ char *convert_number(long int num, int base, int flags)
  *
  * This function prints the integer 'input' in decimal (base 10) format to the specified 'fd'.
  * If 'fd' is STDERR_FILENO, it writes to the standard error stream (stderr) instead of the standard output.
- * Returns: the number of characters printed.
+ *
+ * Return: the number of characters printed.
  */
 int print_d(int input, int fd)
 {
@@ -107,7 +109,8 @@ int print_d(int input, int fd)
  *
  * This function converts a string 's' into an integer. It returns the converted integer value.
  * If the string does not represent a valid integer or the value exceeds the range of an integer,
- * Returns -1 to indicate an error.
+ *
+ * Return: -1 to indicate an error.
  */
 int _erratoi(char *s)
 {

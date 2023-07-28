@@ -7,7 +7,6 @@
  * @new_size: The desired new size (in bytes) for the reallocated block.
  *
  * Return: Pointer to the reallocated block of memory.
-
  * Description: This function takes a pointer 'ptr' to a previously allocated
  * block of memory, 'old_size' representing its size, and 'new_size' as the
  * desired new size for the reallocated block. It reallocated the memory block
