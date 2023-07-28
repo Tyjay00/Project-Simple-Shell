@@ -5,6 +5,7 @@
  *              with line numbers, starting at 0.
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
+ * This function handles the built-in "history" command for the shell.
  *  Return: Always 0
  */
 int _myhistory(info_t *info)
@@ -18,6 +19,7 @@ int _myhistory(info_t *info)
  * @info: parameter struct
  * @str: the string alias
  *
+ * This function is used to unset an alias from the alias list.
  * Return: Always 0 on success, 1 on error
  */
 int unset_alias(info_t *info, char *str)
@@ -41,6 +43,7 @@ int unset_alias(info_t *info, char *str)
  * @info: parameter struct
  * @str: the string alias
  *
+ * This function is used to set an alias in the alias list.
  * Return: Always 0 on success, 1 on error
  */
 int set_alias(info_t *info, char *str)
@@ -61,6 +64,7 @@ int set_alias(info_t *info, char *str)
  * print_alias - prints an alias string
  * @node: the alias node
  *
+ * This function is used to print the contents of an alias node.
  * Return: Always 0 on success, 1 on error
  */
 int print_alias(list_t *node)
@@ -84,6 +88,7 @@ int print_alias(list_t *node)
  * _myalias - mimics the alias builtin (man alias)
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
+ * This function handles the built-in "alias" command for the shell.
  *  Return: Always 0
  */
 int _myalias(info_t *info)

@@ -5,6 +5,7 @@
  * @str: The input string to be split.
  * @d: The delimiter character used to split the string.
  *
+ * This function splits a string into words using a single delimiter character.
  * Return: A pointer to an array of strings, where each element in the array
  *         represents a word from the input string. If the input string is NULL
  *         or empty, or if memory allocation fails, it returns NULL.
@@ -53,6 +54,7 @@ char **strtow2(char *str, char d)
  * @str: The input string to be split.
  * @d: The delimiter string containing multiple delimiters.
  *
+ * This function is similar to the strtow2 function but allows multiple delimiter characters instead of just one.
  * Return: A pointer to an array of strings, where each element in the array
  *         represents a word from the input string. If the input string is NULL
  *         or empty, or if memory allocation fails, it returns NULL.
