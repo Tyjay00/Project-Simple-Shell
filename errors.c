@@ -74,14 +74,13 @@ void _eputs(char *str)
 }
 
 /**
- * _putsfd - function prints an input string to the given file descriptor (fd)
- * @str: The string to be printed
- * @fd: The file descriptor to write to
+ * _putsfd - function prints an input string.
+ * @str: The string to be printed.
+ * @fd: The file descriptor to write to.
  *
  * This function prints the input string 'str' to the specified file descriptor 'fd'.
- * It uses the _putfd function to print each character in the string.
- * If 'str' is NULL, the function returns 0.
- * Otherwise, it returns the number of characters successfully written to the file descriptor.
+ *
+ * Return: The number of chars put
  */
 int _putsfd(char *str, int fd)
 {
