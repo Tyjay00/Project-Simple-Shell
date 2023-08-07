@@ -55,7 +55,6 @@ char **strtow2(char *str, char d)
  * @d: The delimiter string containing multiple delimiters.
  *
  * This function is similar to the strtow2 function.
- * 
  * Return: A pointer to an array of strings, where each element in the array
  *         represents a word from the input string. If the input string is NULL
  *         or empty, or if memory allocation fails, it returns NULL.

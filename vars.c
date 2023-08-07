@@ -8,9 +8,8 @@
  * Return: 1 if the string is replaced successfully, 0 otherwise.
  *
  * Description: This function is used to replace a string with a new one.
- * It frees the memory occupied by the old string and assigns the address of the
- * new string to the pointer 'old'. It returns 1 on success and 0 if any memory
- * allocation fails or if 'old' is NULL.
+ * It frees the memory occupied by the old string and assigns
+ * the address of the new string to the pointer 'old'.
  */
 int replace_string(char **old, char *new)
 {
@@ -61,7 +60,7 @@ int replace_vars(info_t *info)
 }
 
 /**
- * check_chain - Checks if we should continue chaining based on the last status.
+ * check_chain - Checks if we should continue chaining based on the last status
  * @info: Pointer to the parameter struct.
  * @buf: The character buffer containing the command line.
  * @p: Address of the current position in 'buf'.
@@ -95,7 +94,7 @@ void check_chain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
 }
 
 /**
- * is_chain - Tests if the current character in the buffer is a chain delimiter.
+ * is_chain - Tests if the current character in the buffer is a chain delimiter
  * @info: Pointer to the parameter struct.
  * @buf: The character buffer containing the command line.
  * @p: Address of the current position in 'buf'.
