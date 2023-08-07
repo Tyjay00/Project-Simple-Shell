@@ -5,7 +5,7 @@
  * @info: struct address
  * @all: true if freeing all fields
  *
- * This function is responsible for freeing the memory allocated for various fields
+ * This function is responsible for freeing the memory allocated.
  * in the 'info_t' structure.
  */
 void free_info(info_t *info, int all)
@@ -36,7 +36,7 @@ void free_info(info_t *info, int all)
  * clear_info - initializes info_t struct
  * @info: struct address
  *
- * This function initializes the 'info_t' structure by setting various fields to NULL
+ * This function initializes the 'info_t' structure by setting fields to NULL.
  * or 0.
  */
 void clear_info(info_t *info)
@@ -52,8 +52,8 @@ void clear_info(info_t *info)
  * @info: struct address
  * @av: argument vector
  *
- * This function is responsible for initializing the 'info_t' structure based on the
- * arguments provided in 'av'.
+ * This function is responsible for initializing the 'info_t' structure
+ * based on the arguments provided in 'av'.
  */
 void set_info(info_t *info, char **av)
 {

@@ -7,10 +7,12 @@
  * Return: On success, it returns 1.
  *         On error, it returns -1, and errno is set appropriately.
  *
- * Description: This function is used to print a single character to the standard
- * output. It uses a static buffer to store characters before actually writing
- * them to the output. When the buffer is full or when a special character
- * (BUF_FLUSH) is encountered, it writes the buffered characters to the output.
+ * Description: This function is used to print a single character to the
+ * standard output.
+ * It uses a static buffer to store characters before actually writing
+ * them to the output.
+ * When the buffer is full or when special character(BUF_FLUSH) is encountered
+ * it writes the buffered characters to the output.
  * The BUF_FLUSH character is used to flush the buffer without printing any
  * additional character.
  */
@@ -85,8 +87,8 @@ void _puts(char *str)
  *
  * Return: Pointer to the duplicated string.
  *
- * Description: This function duplicates a string 'str' by dynamically allocating
- * memory for a new string and copying the contents of 'str' into it. If 'str'
+ * Description: This function duplicates a string str by dynamically allocating
+ * memory for a new string and copying the contents of str into it. If str
  * is NULL or if memory allocation fails, the function returns NULL. The caller
  * is responsible for freeing the memory allocated by this function when it is
  * no longer needed.

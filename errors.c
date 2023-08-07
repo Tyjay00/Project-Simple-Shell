@@ -5,8 +5,7 @@
  * @c: The character to print
  * @fd: The filedescriptor to write to
  *
- * This function writes a character 'c' to the file descriptor 'fd'. It uses a static buffer
- * of size WRITE_BUF_SIZE to efficiently store and flush characters to the file descriptor.
+ * This function writes a character 'c' to the file descriptor 'fd'.
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -29,8 +28,7 @@ int _putfd(char c, int fd)
  * _eputchar - function writes character c to stderr
  * @c: The character to print
  *
- * This function is similar to _putfd, but it specifically writes the character 'c' to the
- * standard error stream (stderr) instead of a general file descriptor.
+ * This function is similar to _putfd.
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -54,7 +52,7 @@ int _eputchar(char c)
  * _eputs - function prints an input string to stderr
  * @str: The string to be printed
  *
- * This function prints the input string 'str' to the standard error stream (stderr).
+ * This function prints the input string 'str' to the standard error stream.
  * It uses the _eputchar function to print each character in the string.
  * If 'str' is NULL, the function does nothing and returns immediately.
  *
@@ -78,7 +76,7 @@ void _eputs(char *str)
  * @str: The string to be printed.
  * @fd: The file descriptor to write to.
  *
- * This function prints the input string 'str' to the specified file descriptor 'fd'.
+ * This function prints the input string 'str'.
  *
  * Return: The number of chars put
  */

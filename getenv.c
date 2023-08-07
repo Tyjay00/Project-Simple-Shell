@@ -8,7 +8,7 @@
  * @var: the string env var property.
  * @value: the string env var value.
  *
- * This function creates a new environment variable or modifies an existing one.
+ * This function creates a new environment variable or modifies an existing one
  * Return: Always 0
  */
 int _setenv(info_t *info, char *var, char *value)

@@ -4,9 +4,8 @@
  * renumber_history - function renumbers the history linked list after changes
  * @info: Structure containing potential arguments. Used to maintain
  *
- * This function renumbers the history linked list after any changes are made to
- * the list.
- *
+ * This function renumbers the history linked list after any changes are made
+ * to the list.
  * Return: the new histcount
  */
 int renumber_history(info_t *info)
@@ -49,8 +48,8 @@ int build_history_list(info_t *info, char *buf, int linecount)
  * read_history - function reads history from a file
  * @info: the parameter struct
  *
- * This function reads the shell's history from a file and populates the history
- * linked list with the entries.
+ * This function reads the shell's history from a file and populates
+ * the history linked list with the entries.
  *
  * Return: histcount on success, 0 otherwise
  */
@@ -100,8 +99,8 @@ int read_history(info_t *info)
 /**
  * get_history_file - function gets the history file
  * @info: parameter struct
- * This function constructs the path to the history file using the 'HOME' environment
- * variable.
+ * This function constructs the path to the history file using
+ * the 'HOME' environment variable.
  *
  * Return: allocated string containg history file
  */

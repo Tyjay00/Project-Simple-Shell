@@ -48,11 +48,11 @@ int hsh(info_t *info, char **av)
  * find_builtin - finds a builtin command
  * @info: the parameter & return info struct
  *
- * This function searches for a built-in command in the command line arguments (`info->argv`).
+ * This function searches for a built-in command in the command line arguments.
  * Return: -1 if builtin not found,
- * 	0 if builtin executed successfully,
- * 	1 if builtin found but not successful,
- * 	2 if builtin signals exit()
+ * 0 if builtin executed successfully,
+ * 1 if builtin found but not successful,
+ * 2 if builtin signals exit()
  */
 int find_builtin(info_t *info)
 {
@@ -83,7 +83,8 @@ int find_builtin(info_t *info)
  * find_cmd - finds a command in PATH
  * @info: the parameter & return info struct
  *
- * This function is responsible for searching and finding a command in the system's PATH.
+ * This function is responsible for searching and finding a command
+ * in the system's PATH.
  * Return: void
  */
 void find_cmd(info_t *info)
@@ -126,7 +127,8 @@ void find_cmd(info_t *info)
  * fork_cmd - forks a an exec thread to run cmd
  * @info: the parameter & return info struct
  *
- * This function is responsible for forking a child process to execute an external command.
+ * This function is responsible for forking a child process
+ * to execute an external command.
  * Return: void
  */
 void fork_cmd(info_t *info)

@@ -35,7 +35,8 @@ char *dup_chars(char *pathstr, int start, int stop)
  * @pathstr: The PATH string containing directories separated by colons.
  * @cmd: The command to find in the PATH directories.
  *
- * Return: Pointer to the full path of the command if found, or NULL if not found.
+ * Return: Pointer to the full path of the command if found,
+ *         or NULL if not found.
  */
 char *find_path(info_t *info, char *pathstr, char *cmd)
 {

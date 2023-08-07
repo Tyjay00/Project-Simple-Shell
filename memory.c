@@ -7,7 +7,7 @@
  * Return: 1 if the pointer was freed, otherwise 0.
  *
  * Description: This function is used to safely free memory allocated for a
- * pointer and set the pointer to NULL. It takes a double pointer 'ptr' as input,
+ * pointer and set the pointer to NULL. It takes a double pointer ptr as input
  * which represents the address of the pointer to be freed. The function first
  * checks if 'ptr' is not NULL and if the pointer it points to is not NULL.
  * If both conditions are true, it frees the memory pointed to by the pointer

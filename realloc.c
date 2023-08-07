@@ -11,11 +11,12 @@
  * block of memory, 'old_size' representing its size, and 'new_size' as the
  * desired new size for the reallocated block. It reallocated the memory block
  * to the new size using malloc and copies the contents from the old block to
- * the new block. If 'ptr' is NULL, it simply allocates a new block using malloc.
+ * the new block. If ptr is NULL, it simply allocates a new block using malloc.
  * If 'new_size' is 0, it frees the old block and returns NULL.
  * The function ensures to copy the minimum of 'old_size' and 'new_size' bytes
  * from the old block to the new block to avoid potential out-of-bounds access.
- * It returns the pointer to the reallocated block on success or NULL on failure.
+ * It returns the pointer to the reallocated block on success or
+ * NULL on failure.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {

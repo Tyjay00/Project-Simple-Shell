@@ -49,8 +49,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
  * get_input - gets a line minus the newline
  * @info: parameter struct
  *
- * This function reads input from stdin and processes command chaining using ;. It uses the
- * input_buf function to get a line and handles chained commands if present.
+ * This function reads input from stdin and processes command chaining using ;.
  * Return: bytes read
  */
 ssize_t get_input(info_t *info)
@@ -98,7 +97,7 @@ ssize_t get_input(info_t *info)
  * @buf: buffer
  * @i: size
  *
- * This function reads a buffer from the given file descriptor info->readfd into the "buf"
+ * This function reads a buffer from the given file descriptor.
  * parameter.
  * Return: r
  */
@@ -120,7 +119,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
  * @ptr: address of pointer to buffer, preallocated or NULL
  * @length: size of preallocated ptr buffer if not NULL
  *
- * This function reads the next line of input from STDIN into the buffer pointed by ptr.
+ * This function reads the next line of input from STDIN into the buffer.
  * Return: s
  */
 int _getline(info_t *info, char **ptr, size_t *length)
