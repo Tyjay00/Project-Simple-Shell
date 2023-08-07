@@ -4,10 +4,7 @@
  * populate_env_list - fills in the env linked list
  * @info: Containing a potential argument structure. Used to maintain
  *        constant function prototype.
- *
- * This function populates the 'env' linked list in the 'info' structure with the environment variables
- * from the 'environ' array, which is an external array containing the environment variables.
- * It creates a new list node for each environment variable and adds it to the end of the list.
+ * This function populates the 'env' linked list in the 'info' structure.
  *
  * Return: Always 0.
  */
@@ -27,9 +24,7 @@ int populate_env_list(info_t *info)
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *
- * This function is used to unset or remove an environment variable. It takes the environment variable
- * names as arguments in the 'info->argv' array. For each variable name, it calls the '_unsetenv' function
- * to remove it from the 'env' linked list.
+ * This function is used to unset or remove an environment variable.
  *
  * Return: Always 0.
  */
@@ -54,10 +49,7 @@ int _myunsetenv(info_t *info)
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *
- * This function is used to set or modify an environment variable. It takes two arguments in the
- * 'info->argv' array - the name of the environment variable and its value. It calls the '_setenv'
- * function to create a new environment variable or modify an existing one in the 'env' linked list.
- *
+ * This function is used to set or modify an environment variable.
  * Return: Always 0.
  */
 int _mysetenv(info_t *info)
@@ -78,9 +70,7 @@ int _mysetenv(info_t *info)
  *        constant function prototype.
  * @name: env var name
  *
- * This function searches for the value of the environment variable with the specified 'name'
- * in the 'env' linked list of the 'info' structure. If the variable is found, it returns
- * a pointer to its value; otherwise, it returns NULL.
+ * This function searches for the value of the environment variable.
  * Return: the value.
  */
 char *_getenv(info_t *info, const char *name)
@@ -103,9 +93,7 @@ char *_getenv(info_t *info, const char *name)
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *
- * This function prints all the environment variables from the 'env' linked list in the 'info' structure.
- * It calls the 'print_list_str' function to print the 'str' field of each node in the list, which
- * corresponds to the environment variable.
+ * This function prints all the environment variables.
  *
  * Return: Always 0.
  */

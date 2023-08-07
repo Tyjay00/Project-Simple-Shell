@@ -4,10 +4,7 @@
  * remove_comments - function substitutes "0" for the first occurrence of "#"
  * @buf: address of the string to modify
  *
- * This function searches for the first occurrence of the character '#' in the string 'buf'.
- * If the '#' is found at the beginning of the string or after a space character, it replaces
- * it and all subsequent characters with the null terminator '\0', effectively removing the comment.
- *
+ * This function searches for the first occurrence of the character.
  * Return: Always 0.
  */
 void remove_comments(char *buf)
@@ -28,9 +25,7 @@ void remove_comments(char *buf)
  * @base: base
  * @flags: argument flags
  *
- * This function converts the integer 'num' into a string representation using the specified 'base'.
- * The 'flags' argument can be used to specify whether the number should be treated as unsigned.
- *
+ * This function converts the integer 'num' into a string representation.
  * Return: string representation of the number.
  */
 char *convert_number(long int num, int base, int flags)
@@ -66,9 +61,7 @@ char *convert_number(long int num, int base, int flags)
  * @input: the input
  * @fd: the file descriptor to write to
  *
- * This function prints the integer 'input' in decimal (base 10) format to the specified 'fd'.
- * If 'fd' is STDERR_FILENO, it writes to the standard error stream (stderr) instead of the standard output.
- *
+ * This function prints the integer.
  * Return: the number of characters printed.
  */
 int print_d(int input, int fd)
@@ -107,8 +100,7 @@ int print_d(int input, int fd)
  * _erratoi - creates an integer from a string
  * @s: the string being transformed
  *
- * This function converts a string 's' into an integer. It returns the converted integer value.
- * If the string does not represent a valid integer or the value exceeds the range of an integer,
+ * This function converts a string 's' into an interger.
  *
  * Return: -1 to indicate an error.
  */
@@ -139,8 +131,7 @@ int _erratoi(char *s)
  * @info: information struct for parameters and returns
  * @estr: string with the indicated error type
  *
- * This function prints an error message to the standard error stream (stderr) using the provided 'info'.
- * It prints the filename, line number, command, and the error message specified by 'estr'.
+ * This function prints an error message to the standard error stream (stderr).
  * Return: 0 if no numbers in string, converted number otherwise -1 on error.
  */
 void print_error(info_t *info, char *estr)

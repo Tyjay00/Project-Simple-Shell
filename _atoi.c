@@ -4,10 +4,7 @@
  * interactive - function returns true if the shell is in interactive mode
  * @info: struct address
  *
- * This function checks if the shell is running in interactive mode. It uses the `isatty` function
- * to check if the standard input file descriptor (0) is associated with a terminal. If the shell
- * is running interactively, it returns 1; otherwise, it returns 0.
- *
+ * This function checks if the shell is running in interactive mode.
  * Return: 1 if the shell is in interactive mode, 0 otherwise.
  */
 int interactive(info_t *info)
@@ -55,9 +52,7 @@ int _atoi(char *s)
  * is_delim - function checks if a character is a delimiter
  * @c: the char to check
  * @delim: the delimiter string
- *
  * This function checks if a character is present in the delimiter string.
- *
  * Return: 1 if the character is a delimiter, 0 otherwise.
  */
 int is_delim(char c, char *delim)
@@ -71,10 +66,7 @@ int is_delim(char c, char *delim)
 /**
  * _isalpha - function checks for an alphabetic character
  * @c: The character to input
- *
- * This function checks whether a given character is an alphabetic character (a-z or A-Z).
- * If the character is alphabetic, the function returns 1; otherwise, it returns 0.
- *
+ * This function checks whether a given character is an alphabetic character.
  * Return: 1 if the character is alphabetic, 0 otherwise.
  */
 int _isalpha(int c)

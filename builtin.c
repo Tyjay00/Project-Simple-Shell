@@ -85,7 +85,7 @@ int _mycd(info_t *info)
  * _myhelp - changes the current directory of the process
  * @info: Structure containing potential arguments. Used to maintain
  * constant function prototype.
- * This function is a placeholder for the built-in "help" command for the shell.
+ * This function is a placeholder for the built-in "help" command for the shell
  * Return: Always 0
  */
 int _myhelp(info_t *info)

@@ -5,7 +5,7 @@
  * @s: string that has to be parsed
  * @c: the character to look for
  *
- * This function searches for the first occurrence of character 'c' in the string 's'.
+ * This function searches for the first occurrence of character 'c'.
  * Return: (s) a pointer to the memory area s
  */
 char *_strchr(char *s, char c)
@@ -24,7 +24,7 @@ char *_strchr(char *s, char c)
  * @src: the source string
  * @n: the amount of characters to be copied
  *
- *  This function copies 'n' characters from the 'src' string to the 'dest' string.
+ *  This function copies 'n' characters from the src string to the dest string.
  * Return: the concatenated string
  */
 char *_strncpy(char *dest, char *src, int n)
@@ -56,7 +56,7 @@ char *_strncpy(char *dest, char *src, int n)
  * @src: the second string
  * @n: the maximum number of bytes to be used
  *
- * This function appends at most 'n' characters from the 'src' string to the end of the 'dest' string.
+ * This function appends at most 'n' characters.
  * Return: the concatenated string
  */
 char *_strncat(char *dest, char *src, int n)
